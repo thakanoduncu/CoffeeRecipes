@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CoffeeRecipes.MainPage">
+
+    <ScrollView BackgroundColor="#F5F0E5">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="COFFEE RECIPES"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   FontSize="Title"
+                   TextColor="#35312E"
+                   Margin="8"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"/>
+
+            <ImageButton x:Name="btnEspresso"
+                         Source="espresso.png"
+                         BackgroundColor="Transparent"
+                         BorderWidth="2"
+                         BorderColor="#35312E" 
+                         AutomationId="espresso"
+                         Padding="4"
+                         Grid.Row="1"
+                         Grid.Column="0"
+                         Margin="16,8,8,8"
+                         Aspect="AspectFit"
+                         Clicked="Btn_Clicked"/>
+
+            <ImageButton x:Name="btnDoppio" 
+                         Source="doppio.png"                         
+                         BackgroundColor="Transparent"
+                         BorderWidth="2"
+                         BorderColor="#35312E"
+                         AutomationId="doppio"
+                         Padding="4"
+                         Grid.Row="1"
+                         Grid.Column="1"
+                         Margin="8,8,16,8"
+                         Aspect="AspectFit"                        
+                         Clicked="Btn_Clicked"/>
+
+            <ImageButton x:Name="btnMacchiato"
+                         Source="macchiato.png"
+                         BackgroundColor="Transparent"
+                         BorderWidth="2"
+                         BorderColor="#35312E"
+                         AutomationId="macchiato"
+                         Padding="4"
+                         Grid.Row="2"
+                         Grid.Column="0"
+                         Margin="16,8,8,8"
+                         Aspect="AspectFit"
+                         Clicked="Btn_Clicked"/>
+
+            <ImageButton x:Name="btnCafeCreme" 
+                         Source="cafe_creme.png"                         
+                         BackgroundColor="Transparent"
+                         BorderWidth="2"
+                         BorderColor="#35312E"
+                         AutomationId="cafe_creme"
+                         Padding="4"
+                         Grid.Row="2"
+                         Grid.Column="1"
+                         Margin="8,8,16,8"
+                         Aspect="AspectFit"                        
+                         Clicked="Btn_Clicked"/>
+
+            <ImageButton x:Name="btnCappuccino"
+                         Source="cappuccino.png"
+                         BackgroundColor="Transparent"
+                         BorderWidth="2"
+                         BorderColor="#35312E"
+                         AutomationId="cappuccino"
+                         Padding="4"
+                         Grid.Row="3"
+                         Grid.Column="0"
+                         Margin="16,8,8,8"
+                         Aspect="AspectFit"
+                         Clicked="Btn_Clicked"/>
+
+            <ImageButton x:Name="btnAmericano" 
+                         Source="americano.png"                         
+                         BackgroundColor="Transparent"
+                         BorderWidth="2"
+                         BorderColor="#35312E"
+                         AutomationId="americano"
+                         Padding="4"
+                         Grid.Row="3"
+                         Grid.Column="1"
+                         Margin="8,8,16,8"
+                         Aspect="AspectFit"                        
+                         Clicked="Btn_Clicked"/>
+
+            <ImageButton x:Name="btnAffogato"
+                         Source="affogato.png"
+                         BackgroundColor="Transparent"
+                         BorderWidth="2"
+                         BorderColor="#35312E"
+                         AutomationId="affogato"
+                         Padding="4"
+                         Grid.Row="4"
+                         Grid.Column="0"
+                         Margin="16,8,8,8"
+                         Aspect="AspectFit"
+                         Clicked="Btn_Clicked"/>
+
+            <ImageButton x:Name="btnBreve" 
+                         Source="breve.png"                         
+                         BackgroundColor="Transparent"
+                         BorderWidth="2"
+                         BorderColor="#35312E"
+                         AutomationId="breve"
+                         Padding="4"
+                         Grid.Row="4"
+                         Grid.Column="1"
+                         Margin="8,8,16,8"
+                         Aspect="AspectFit"                        
+                         Clicked="Btn_Clicked"/>
+
+            <ImageButton x:Name="btnMocha"
+                         Source="mocha.png"
+                         BackgroundColor="Transparent"
+                         BorderWidth="2"
+                         BorderColor="#35312E"
+                         AutomationId="mocha"
+                         Padding="4"
+                         Grid.Row="5"
+                         Grid.Column="0"
+                         Margin="16,8,8,8"
+                         Aspect="AspectFit"
+                         Clicked="Btn_Clicked"/>
+
+            <ImageButton x:Name="btnCafeConHielo" 
+                         Source="cafe_con_hielo.png"                         
+                         BackgroundColor="Transparent"
+                         BorderWidth="2"
+                         BorderColor="#35312E"
+                         AutomationId="cafe_con_hielo"
+                         Padding="4"
+                         Grid.Row="5"
+                         Grid.Column="1"
+                         Margin="8,8,16,8"
+                         Aspect="AspectFit"                        
+                         Clicked="Btn_Clicked"/>
+
+            <ImageButton x:Name="btnFlatWhite"
+                         Source="flat_white.png"
+                         BackgroundColor="Transparent"
+                         BorderWidth="2"
+                         BorderColor="#35312E"
+                         AutomationId="flat_white"
+                         Padding="4"
+                         Grid.Row="6"
+                         Grid.Column="0"
+                         Margin="16,8,8,8"
+                         Aspect="AspectFit"
+                         Clicked="Btn_Clicked"/>
+
+            <ImageButton x:Name="btnBlackEye" 
+                         Source="black_eye.png"                         
+                         BackgroundColor="Transparent"
+                         BorderWidth="2"
+                         BorderColor="#35312E"
+                         AutomationId="black_eye"
+                         Padding="4"
+                         Grid.Row="6"
+                         Grid.Column="1"
+                         Margin="8,8,16,8"
+                         Aspect="AspectFit"                        
+                         Clicked="Btn_Clicked"/>
+
+            <ImageButton x:Name="btnLatte"
+                         Source="latte.png"
+                         BackgroundColor="Transparent"
+                         BorderWidth="2"
+                         BorderColor="#35312E"
+                         AutomationId="latte"
+                         Padding="4"
+                         Grid.Row="7"
+                         Grid.Column="0"
+                         Margin="16,8,8,16"
+                         Aspect="AspectFit"
+                         Clicked="Btn_Clicked"/>
+
+            <ImageButton x:Name="btnDoubleLatte" 
+                         Source="double_latte.png"                         
+                         BackgroundColor="Transparent"
+                         BorderWidth="2"
+                         BorderColor="#35312E"
+                         AutomationId="double_latte"
+                         Padding="4"
+                         Grid.Row="7"
+                         Grid.Column="1"
+                         Margin="8,8,16,16"
+                         Aspect="AspectFit"                        
+                         Clicked="Btn_Clicked"/>
+        </Grid>
+    </ScrollView>
+</ContentPage>
